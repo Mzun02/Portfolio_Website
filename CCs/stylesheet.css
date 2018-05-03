@@ -1,1 +1,29 @@
 #head
+{
+width: auto;
+height: 150px;
+background-color: #092D44;
+font-size: 48px;
+font-family: "Arial";
+}
+.hover
+{
+
+}
+#graph
+{
+
+}
+#write
+{
+
+}
+#about
+{
+height: 286pts;
+width: auto;
+}
+a{
+text-decoration: none;
+color: white;
+}
