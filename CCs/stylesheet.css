@@ -5,25 +5,37 @@ height: 150px;
 background-color: #092D44;
 font-size: 48px;
 font-family: "Arial";
+align-items: center;
+justify-content: space-around;
+display: flex;
 }
 .hover
 {
-
+flex-direction: row;
+display: flex;
 }
 #graph
 {
-
+width: 50%;
 }
 #write
 {
-
+width: 50%;
 }
 #about
 {
-height: 286pts;
+height: 286px;
 width: auto;
+border-width: thick;
+border-color: ;
+border-style: solid;
 }
 a{
 text-decoration: none;
 color: white;
+text-align: center;
+}
+#log{
+height: 132px;
+width: 167px;
 }
