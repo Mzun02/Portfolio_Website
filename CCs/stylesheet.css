@@ -15,16 +15,18 @@ flex-direction: row;
 display: flex;
 margin: 0px;
 }
-.hover:hover{
-
+.hover:hover,.overlay:hover, .overlay2:hover{
+ opacity: 0;
 }
 #graph
 {
 max-width: 100%;
+display: block;
 }
 #write
 {
 max-width: 100%;
+display: block;
 }
 #about
 {
@@ -71,11 +73,6 @@ font-weight: 100;
 flex-direction: column;
 display: flex;
 }
-.hovtex {
-z-index: 20;
-overflow-x: hidden;
-width:
-}
 #50{
 width: 50%;
 height: auto;
@@ -100,4 +97,42 @@ background-color: #55677F;
 justify-content:center;
 font-family: "Arial";
 display: flex;
+}
+.overlay .overlay2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.text .text2 {
+transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+color: white;
+position: absolute;
+font-size: 20px;
+top: 50%;
+  left: 50%;
+}
+.change:hover{
+background-color: gray;
+-webkit-transition:background-color 1s;
+}
+.change{
+width: 200px;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.text, .text2 {
+position: relative;
+top:-500px;
+visibility: collapse;
 }
