@@ -16,7 +16,7 @@ display: flex;
 margin: 0px;
 }
 .hover:hover,.overlay:hover, .overlay2:hover{
- opacity: 0;
+ opacity: 1;
 }
 #graph
 {
@@ -110,15 +110,20 @@ display: flex;
   transition: .5s ease;
   background-color: #008CBA;
 }
-.text .text2 {
+.text, .text2 {
 transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 color: white;
-position: absolute;
 font-size: 20px;
 top: 50%;
   left: 50%;
+position: relative;
+top:-500px;
+visibility: visible;
+z-index: 5;
+width: 50%;
+height: 100px;
 }
 .change:hover{
 background-color: gray;
@@ -131,8 +136,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.text, .text2 {
-position: relative;
-top:-500px;
-visibility: collapse;
+.text:hover {
+visibility: hidden;
 }
