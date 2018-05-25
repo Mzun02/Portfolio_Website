@@ -15,9 +15,6 @@ flex-direction: row;
 display: flex;
 margin: 0px;
 }
-.hover:hover,.overlay:hover, .overlay2:hover{
- opacity: 1;
-}
 #graph
 {
 max-width: 100%;
@@ -98,33 +95,6 @@ justify-content:center;
 font-family: "Arial";
 display: flex;
 }
-.overlay .overlay2{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-.text, .text2 {
-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-color: white;
-font-size: 20px;
-top: 50%;
-  left: 50%;
-position: relative;
-top:-500px;
-visibility: visible;
-z-index: 5;
-width: 50%;
-height: 100px;
-}
 .change:hover{
 background-color: gray;
 -webkit-transition:background-color 1s;
@@ -136,6 +106,4 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.text:hover {
-visibility: hidden;
-}
+
